@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Todo app</title>
+<body>
+  <main class="main-container">
+    <div class="backgroundimage"></div>
+    <section class="todo-container">
+      <div class="header-panel">
+        <div class="header">TODO</div>
+        <div class="daynight-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="moon" width="100%" height="100%"><path fill="#FFF" fill-rule="evenodd" d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"/></svg>
+        </div>
+      </div>
+      <form action="./" method="GET" class="form">
+        <div class="input-panel">
+          <div class="input-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="input-checkmark" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+          </div>
+          <input type="text" class="input" autocomplete="none" placeholder="Create a new todo..." maxlength="40" spellcheck="false">
+        </div>
+      </form>
+      <section class="mid-container">
+        <div class="task-container">
+          <div class="task-panel">
+          </div>
+        </div>
+        <div class="select-container">
+          <div class="items-left">0 items left</div>
+          <div class="select-panel">
+            <div class="select select--all">All</div>
+            <div class="select select--active">Active</div>
+            <div class="select select--completed">Completed</div>
+          </div>
+          <div class="clear-completed">Clear completed</div>
+        </div>
+      </section>
+      <section class="select-container-mobile">
+        <div class="select-panel-mobile">
+          <div class="select-mobile-all">All</div>
+          <div class="select-mobile-active">Active</div>
+          <div class="select-mobile-completed">Completed</div>
+        </div>
+      </section>
+      <div class="dragandrop">Drag and drop to reorder list</div>
+    </section>
+  </main>
+  
+  
+  
+  <!-- Javascript -->
+  <script src="todo.js"></script>
+</body>
+</html>
